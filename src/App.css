@@ -1,3 +1,13 @@
+:root {
+  --general: #05454F;
+  --patient: #00667D;
+  --lifestyle: #17A1BB;
+  --services: #29D1DE;
+  --relligion: #95D600;
+  --blue: #367FC1;
+  --green: #48b749;
+}
+
 .pageDad {
   display: flex;
   flex-direction: column;

@@ -14,31 +14,31 @@ const Main = () => {
     const MainArr = [
         {
             img: general,
-            color: '#05454F',
+            color: 'general',
             text: 'מידע כללי',
             link: '#',
         },
         {
             img: patient,
-            color: '#00667D',
+            color: 'patient',
             text: 'זכויות המטופל',
             link: '#',
         },
         {
             img: lifestyle,
-            color: '#17A1BB',
+            color: 'lifestyle',
             text: 'נוחות ופנאי',
             link: '#',
         },
         {
             img: services,
-            color: '#29D1DE',
+            color: 'services',
             text: 'שירותים מיוחדים',
             link: '#',
         },
         {
             img: relligion,
-            color: '#95D600',
+            color: 'relligion',
             text: 'שירותי דת',
             link: '#',
         },
@@ -50,7 +50,7 @@ const Main = () => {
                 <div className='nav'>
                     <img src={mapIcon} />
                     <img src={logo} />
-                    <AiOutlineMenu style={{ color: '#05454F' }} />
+                    <AiOutlineMenu style={{ color: 'var(--blue)', width: '10%' }} />
 
                 </div>
                 {MainArr.map((el, i) => {
