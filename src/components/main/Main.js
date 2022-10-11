@@ -1,35 +1,39 @@
-const Main = () => {
+import lifestyle from '../../assets/images/lifestyle.png'
+import patient from '../../assets/images/patient.jpg'
+import relligion from '../../assets/images/relligion.jpg'
+import services from '../../assets/images/services.jpg'
 
+const Main = () => {
     
 	const MainArr = [
 		{
-			img: '',
-            color: 'blue',
-			text: 'נקיון כניסה',
+			img: lifestyle,
+            color: '#05454F',
+			text: 'מידע כללי',
 			link: '#',
 		},
 		{
-			img: '',
-            color: 'blue',
-			text: 'תחזוקת מעליות',
+			img: patient,
+            color: '#00667D',
+			text: 'זכויות המטופל',
 			link: '#',
 		},
 		{
-			img: '',
-            color: 'blue',
-			text: 'פינוי זבל',
+			img: lifestyle,
+            color: '#17A1BB',
+			text: 'נוחות ופנאי',
 			link: '#',
 		},
 		{
-			img: '',
-            color: 'blue',
-			text: 'אבטחה',
+			img: services,
+            color: '#29D1DE',
+			text: 'שירותים מיוחדים',
 			link: '#',
 		},
 		{
-			img: '',
-            color: 'blue',
-			text: 'שיפוץ',
+			img: relligion,
+            color: '#95D600',
+			text: 'שירותי דת',
 			link: '#',
 		},
     ]
@@ -40,8 +44,13 @@ const Main = () => {
                 {
                     MainArr.map((el, i) => {
                         return (
-                            <div>
-                                {el.text}
+                            <div className="mainSquare" style={{background: el.color}}>
+                                <div className="mainSquareImg">
+                                    <img src={el.img} />
+                                </div>
+                                <div className="mainSquareText">
+                                    {el.text}
+                                </div>
                             </div>
                         )
                     })
