@@ -21,7 +21,7 @@ const MainSquare = (props) => {
       {props.mainSelect === props.color &&
         <div className="categories">
           {props.categories.map((el, i) => {
-            
+
             return (
               <SubSquare el={el} color={props.color} />
             )

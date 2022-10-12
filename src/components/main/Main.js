@@ -49,7 +49,7 @@ const MainArr = [
                 link: 'https://hospitals.clalit.co.il/soroka/he/about/Pages/about-the-medical-center.aspx'
             },
             {
-                title: 'דרכי גישה, חנייה והתמצאות ',
+                title: 'דרכי גישה, חניה והתמצאות ',
                 img: ways,
                 text: 'לרשות המגיעים לסורוקה ברכב פרטי, עומד מערך של חניונים בתשלום הפרושים ברחבי המרכז הרפואי. החל מתאריך 1.5.2014 המרכז הרפואי סורוקה התאים את הקריטריונים לקבלת פטור מתשלום דמי חנייה להמלצות משרד הבריאות. למידע נוסף לחצו על הקישור ',
                 link: 'https://hospitals.clalit.co.il/soroka/he/patients-Info/Pages/directions.aspx'
@@ -80,7 +80,7 @@ const MainArr = [
         text: 'נוחות ופנאי',
         categories: [
             {
-                title: 'איפה אוכלים כאן?',
+                title: 'איפה אוכלים?',
                 img: eat,
                 text: 'איפה דוכן הקפה הקרוב אליי? אלו חנויות נמצאות ברחבי בית החולים? ואיפה יש מכונות אוטומטיות לקניית שתייה וחטיפים? ריכזנו הכל במדריך אחד',
                 link: 'https://hospitals.clalit.co.il/soroka/he/patients-Info/Pages/maternity-area--food.aspx'
