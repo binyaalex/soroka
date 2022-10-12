@@ -174,8 +174,12 @@ footer>a {
   font-size: 3vh;
 }
 
+.nav {
+  padding: 0 10px;
+}
+
 @media only screen and (max-width: 500px) {
-  .mainSquareText {
-    /* font-size: 32px; */
+  .modal-dialog {
+    top: 20%;
   }
 }

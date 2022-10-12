@@ -13,7 +13,7 @@ const Map = (props) => {
                 <img src={map} />
             </div>
             <div className='escDiv'>
-                <FaTimesCircle handleClose={handleClose} />
+                <FaTimesCircle onClick={handleClose} />
             </div>
         </Modal>
     )
