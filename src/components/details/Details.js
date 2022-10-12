@@ -8,7 +8,15 @@ const Details = (props) => {
     
     return (
         <Modal show={props.show} onHide={handleClose} className="modal">
-            {props.object.title}
+            <div className='deatails'>
+                <div className='deatailsImg'>
+                    <img src={props.object.img} />
+                </div>
+                <div className='deatailsContent'>
+                    <div className='deatailsTitle'>{props.object.title}</div>
+                    <div className='deatailsText'>{props.object.text}</div>
+                </div>
+            </div>
             <div className='escDiv'>
                 <FaTimesCircle onClick={handleClose} />
             </div>
