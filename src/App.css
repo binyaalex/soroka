@@ -142,6 +142,7 @@ footer>a:hover {
   gap: 5%;
   padding: 5%;
   direction: rtl;
+  transition: all 1s;
 }
 
 .categories .category {

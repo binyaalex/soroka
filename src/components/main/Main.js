@@ -183,6 +183,7 @@ const Main = () => {
         popup.style.display = "block";
     }
 
+
     return (
         <>
             <main className='mainPage' >

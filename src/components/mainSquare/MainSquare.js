@@ -6,7 +6,7 @@ const MainSquare = (props) => {
 
   return (
     <>
-      <div className="mainSquare"
+      <div className="mainSquare mountedStyle"
         style={{ background: `var(--${props.color})` }}
         onClick={() => props.setMainSelect(props.mainSelect === props.color ? '' : props.color)}
       >
