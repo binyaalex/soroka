@@ -173,8 +173,8 @@ const MainArr = [
     },
 ]
 const Main = () => {
-    const [mainSelect, setMainSelect] = useState()
-    const [subSelect, setSubSelect] = useState()
+    const [mainSelect, setMainSelect] = useState('');
+    const [subSelect, setSubSelect] = useState();
     const [show, setShow] = useState(false);
     const handleShow = () => setShow(true);
 
@@ -201,6 +201,9 @@ const Main = () => {
                             text={el.text}
                             key={i}
                             categories={el.categories}
+                            mainSelect={mainSelect}
+                            subSelect={subSelect}
+                            setMainSelect={setMainSelect}
                         />
                     )
                 })}

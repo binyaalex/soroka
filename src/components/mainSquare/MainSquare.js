@@ -3,7 +3,10 @@ const MainSquare = (props) => {
 
   return (
     <>
-      <div className="mainSquare" style={{ background: `var(--${props.color})` }} >
+      <div className="mainSquare"
+        style={{ background: `var(--${props.color})` }}
+        onClick={() => props.setMainSelect(props.mainSelect === props.color ? '' : props.color)}
+      >
         <div className="mainSquareImg">
           <img src={props.img} />
         </div>
@@ -12,19 +15,21 @@ const MainSquare = (props) => {
         </div>
       </div >
 
-      {/* {props.mainSelect === props.text && */}
-      <div className="categories">
-        {props.categories.map((el, i) => {
-          return (
-            <div className="category" key={i} onClick={''}>
-              <img src={el.img} />
-              <h2 style={{ color: `var(--${props.color})` }}>{el.title}</h2>
-            </div>
-          )
-        })
-        }
-      </div>
-      {/* } */}
+      {props.mainSelect === props.color &&
+        <div className="categories">
+          {props.categories.map((el, i) => {
+            return (
+              <div className="category" key={i} onClick={''} >
+                <div className="imgDiv" style={{ backgroundColor: `var(--${props.color})` }}>
+                  <img src={el.img} />
+                </div>
+                <h2 style={{ color: `var(--${props.color})` }}>{el.title}</h2>
+              </div>
+            )
+          })
+          }
+        </div>
+      }
     </>
   )
 }
