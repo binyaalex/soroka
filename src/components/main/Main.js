@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 import general from '../../assets/images/general.jpg'
 import lifestyle from '../../assets/images/lifestyle.png'
 import patient from '../../assets/images/patient.jpg'
@@ -10,6 +8,8 @@ import mapIcon from '../../assets/map-icon.svg'
 
 import MainSquare from '../mainSquare/MainSquare'
 import { AiOutlineMenu } from 'react-icons/ai';
+import Popup from '../popup/Popup'
+import Map from '../map/Map'
 
 const Main = () => {
 
@@ -46,11 +46,17 @@ const Main = () => {
         },
     ]
 
+    const openMap = () => {
+        const popup = document.querySelector('.map').parentElement
+        console.log(popup);
+        popup.style.display = "block";
+    }
+
     return (
         <>
             <main className='mainPage' >
                 <div className='nav'>
-                    <img src={mapIcon} />
+                    <img onClick={openMap} src={mapIcon} />
                     <img src={logo} />
                     <AiOutlineMenu style={{ color: 'var(--blue)', width: '10%' }} />
 
@@ -61,9 +67,11 @@ const Main = () => {
                             color={el.color}
                             img={el.img}
                             text={el.text}
+                            key={i}
                         />
                     )
                 })}
+                <Popup component={<Map />} />
                 <footer>
                     <a className='clalit' href="https://www.clalit.co.il" >אתר כללית</a>
                     <a className='soroka' href="https://www.clalit.co.il" >אתר סורוקה</a>
