@@ -16,9 +16,9 @@ const MainSquare = (props) => {
       <div className="categories">
         {props.categories.map((el, i) => {
           return (
-            <div className="categoty" key={i} onClick={''}>
+            <div className="category" key={i} onClick={''}>
               <img src={el.img} />
-              <h1>{el.title}</h1>
+              <h2 style={{ color: props.color }}>{el.title}</h2>
             </div>
           )
         })
