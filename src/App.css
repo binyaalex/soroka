@@ -1,7 +1,7 @@
 :root {
   --general: #05454F;
-  --patient: #00667D;
-  --lifestyle: #17A1BB;
+  --lifestyle: #00667D;
+  --patient: #17A1BB;
   --services: #29D1DE;
   --relligion: #95D600;
   --blue: #367FC1;
@@ -121,7 +121,7 @@ footer>a {
   justify-content: center;
 }
 
-.map > img {
+.map>img {
   width: 90%;
 }
 
@@ -132,12 +132,12 @@ footer>a {
   padding: 0 10px;
 }
 
-.escDiv > svg {
+.escDiv>svg {
   font-size: 25px;
 }
 
 @media only screen and (max-width: 500px) {
   .mainSquareText {
-    font-size: 32px;
+    /* font-size: 32px; */
   }
 }
