@@ -1,8 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import SubSquare from '../subSquare/SubSquare';
 
 const MainSquare = (props) => {
-
+  useEffect(() => {
+    props.mainSelect && document.querySelector(".categories").scrollIntoView();
+  })
   return (
     <>
       <div className="mainSquare mountedStyle"

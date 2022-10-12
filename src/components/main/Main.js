@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MainSquare from '../mainSquare/MainSquare'
 // import { AiOutlineMenu } from 'react-icons/ai';
 import { BsFillChatDotsFill } from 'react-icons/bs';
@@ -171,6 +171,7 @@ const MainArr = [
     },
 ]
 const Main = () => {
+
     const [mainSelect, setMainSelect] = useState('');
     const [subSelect, setSubSelect] = useState();
     const [show, setShow] = useState(false);
