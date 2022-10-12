@@ -185,6 +185,9 @@ footer>a:hover {
   /* padding: 0 10px; */
 }
 
+.deatails {
+  direction: rtl;
+}
 
 .deatailsImg {
   width: 100%;
@@ -193,6 +196,13 @@ footer>a:hover {
 
 .deatailsImg > img {
   width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.deatailsTitle {
+  font-size: 35px;
+  text-align: center;
+  font-family: assistance;
 }
 
 
