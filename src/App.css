@@ -136,6 +136,42 @@ footer>a {
   font-size: 25px;
 }
 
+.categories {
+  display: flex;
+  /* width: 100%; */
+  flex-wrap: wrap;
+  gap: 10%;
+  padding: 5%;
+  direction: rtl;
+  /* justify-content: center; */
+}
+
+.categories .category {
+  margin-bottom: 5%;
+  width: 45%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.categories .category>img {
+  opacity: 0.5;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.categories .category>h2 {
+  position: absolute;
+  /* top: 30%; */
+  z-index: 10;
+  /* direction: rtl; */
+  margin: 0 5%;
+  text-align: right;
+}
+
 @media only screen and (max-width: 500px) {
   .modal-dialog {
     top: 20%;

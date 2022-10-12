@@ -200,6 +200,7 @@ const Main = () => {
                             img={el.img}
                             text={el.text}
                             key={i}
+                            categories={el.categories}
                         />
                     )
                 })}
