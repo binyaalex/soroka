@@ -184,10 +184,6 @@ footer>a:hover {
   margin: 0;
 }
 
-.nav {
-  /* padding: 0 10px; */
-}
-
 .deatails {
   direction: rtl;
 }
@@ -217,7 +213,6 @@ footer>a:hover {
 .deatailsText a {
   text-decoration: none;
   font-weight: 700;
-  /* margin-right: 5px; */
 }
 
 
