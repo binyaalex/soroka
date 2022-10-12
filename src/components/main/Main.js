@@ -3,8 +3,8 @@ import lifestyle from '../../assets/images/lifestyle.png'
 import patient from '../../assets/images/patient.jpg'
 import relligion from '../../assets/images/relligion.jpg'
 import services from '../../assets/images/services.jpg'
-import logo from '../../assets/soroka-logo.png'
-import mapIcon from '../../assets/map-icon.svg'
+import logo from '../../assets/icons/soroka-logo.png'
+import mapIcon from '../../assets/icons/map-icon.svg'
 
 import MainSquare from '../mainSquare/MainSquare'
 import { AiOutlineMenu } from 'react-icons/ai';
