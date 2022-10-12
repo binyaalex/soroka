@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import general from '../../assets/images/general.jpg'
 import lifestyle from '../../assets/images/lifestyle.png'
 import patient from '../../assets/images/patient.jpg'
@@ -62,6 +64,10 @@ const Main = () => {
                         />
                     )
                 })}
+                <footer>
+                    <a className='clalit' href="https://www.clalit.co.il" >אתר כללית</a>
+                    <a className='soroka' href="https://www.clalit.co.il" >אתר סורוקה</a>
+                </footer>
             </main>
         </>
     )
