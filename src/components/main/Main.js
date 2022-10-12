@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import MainSquare from '../mainSquare/MainSquare'
 import { AiOutlineMenu } from 'react-icons/ai';
+import { BsFillChatDotsFill } from 'react-icons/bs';
+
 import Popup from '../popup/Popup'
 import Map from '../map/Map'
 //images
@@ -184,10 +186,9 @@ const Main = () => {
     return (
         <>
             <main className='mainPage' >
-                <div className='nav'>
+                <div className='pageNav'>
                     <img onClick={handleShow} src={mapIcon} />
                     <img src={logo} />
-                    <AiOutlineMenu style={{ color: 'var(--blue)', width: '10%' }} />
 
                 </div>
                 {MainArr.map((el, i) => {
@@ -206,8 +207,10 @@ const Main = () => {
                 })}
                 <Map show={show} setShow={setShow} />
                 <footer>
-                    <a className='clalit' href="https://www.clalit.co.il" >אתר כללית</a>
+                    <BsFillChatDotsFill size='3em' style={{ color: 'var(--green)' }} />
                     <a className='soroka' href="https://hospitals.clalit.co.il/soroka/he/Pages/default.aspx" >אתר סורוקה</a>
+
+                    <a className='clalit' href="https://www.clalit.co.il" >אתר כללית</a>
                 </footer>
             </main>
         </>
