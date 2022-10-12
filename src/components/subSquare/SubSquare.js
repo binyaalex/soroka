@@ -11,7 +11,7 @@ const SubSquare = (props) => {
             <div className='textDiv'>
                 <h2 style={{ color: `var(--${props.color})` }}>{props.el.title}</h2>
             </div>
-            <Details show={show} setShow={setShow} object={props.el} />
+            <Details show={show} setShow={setShow} object={props.el} color={props.color} />
         </div>
     )
 

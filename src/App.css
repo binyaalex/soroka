@@ -205,6 +205,15 @@ footer>a:hover {
   font-family: assistance;
 }
 
+.deatailsText {
+  padding: 0 10px;
+}
+
+.deatailsText a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
 
 @media only screen and (max-width: 500px) {
   .modal-dialog {
