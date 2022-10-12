@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import Details from "../details/Details";
+import SubSquare from '../subSquare/SubSquare';
 
 const MainSquare = (props) => {
 
@@ -18,13 +21,9 @@ const MainSquare = (props) => {
       {props.mainSelect === props.color &&
         <div className="categories">
           {props.categories.map((el, i) => {
+            
             return (
-              <div className="category" key={i} onClick={''} >
-                <div className="imgDiv" style={{ backgroundColor: `var(--${props.color})` }}>
-                  <img src={el.img} />
-                </div>
-                <h2 style={{ color: `var(--${props.color})` }}>{el.title}</h2>
-              </div>
+              <SubSquare el={el} color={props.color} />
             )
           })
           }
