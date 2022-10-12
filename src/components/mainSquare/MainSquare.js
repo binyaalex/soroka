@@ -17,7 +17,6 @@ const MainSquare = (props) => {
           {props.text}
         </div>
       </div >
-
       {props.mainSelect === props.color &&
         <div className="categories">
           {props.categories.map((el, i) => {
