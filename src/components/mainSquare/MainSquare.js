@@ -18,7 +18,7 @@ const MainSquare = (props) => {
           return (
             <div className="category" key={i} onClick={''}>
               <img src={el.img} />
-              <h2 style={{ color: props.color }}>{el.title}</h2>
+              <h2 style={{ color: `var(--${props.color})` }}>{el.title}</h2>
             </div>
           )
         })
