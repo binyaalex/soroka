@@ -158,12 +158,12 @@ footer>a {
 
 .categories .category .imgDiv {
   border-radius: 10px;
-  opacity: 0.7;
+  /* opacity: 0.9; */
 }
 
 .categories .category .imgDiv>img {
   border-radius: 10px;
-  opacity: 0.6;
+  opacity: 0.9;
   aspect-ratio: 1/0.8;
   object-fit: cover;
   width: 100%;

@@ -34,9 +34,6 @@ import knesset from '../../assets/images/relligion/knesset.jpg'
 import kosher from '../../assets/images/relligion/kosher.jpg'
 import islam from '../../assets/images/relligion/islam.jpg'
 
-
-
-
 const MainArr = [
     {
         img: general,
@@ -210,7 +207,7 @@ const Main = () => {
                 <Map show={show} setShow={setShow} />
                 <footer>
                     <a className='clalit' href="https://www.clalit.co.il" >אתר כללית</a>
-                    <a className='soroka' href="https://www.clalit.co.il" >אתר סורוקה</a>
+                    <a className='soroka' href="https://hospitals.clalit.co.il/soroka/he/Pages/default.aspx" >אתר סורוקה</a>
                 </footer>
             </main>
         </>
