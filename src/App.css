@@ -185,6 +185,17 @@ footer>a:hover {
   /* padding: 0 10px; */
 }
 
+
+.deatailsImg {
+  width: 100%;
+  height: 50%;
+}
+
+.deatailsImg > img {
+  width: 100%;
+}
+
+
 @media only screen and (max-width: 500px) {
   .modal-dialog {
     top: 20%;
