@@ -32,7 +32,7 @@
 .pageNav {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   height: calc(100vh/7);
 }
@@ -134,6 +134,8 @@ footer>a:hover {
 
 .escDiv>svg {
   font-size: 25px;
+  cursor: pointer;
+
 }
 
 .categories {
@@ -195,24 +197,27 @@ footer>a:hover {
   height: 50%;
 }
 
-.deatailsImg > img {
+.deatailsImg>img {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
 .deatailsTitle {
-  font-size: 35px;
+  font-size: 3vh;
   text-align: center;
-  font-family: assistance;
+  font-family: assistant;
+  font-weight: 700;
 }
 
 .deatailsText {
+  font-family: assistant;
   padding: 0 10px;
 }
 
 .deatailsText a {
   text-decoration: none;
   font-weight: 700;
+  /* margin-right: 5px; */
 }
 
 

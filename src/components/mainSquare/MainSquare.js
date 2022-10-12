@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Details from "../details/Details";
 import SubSquare from '../subSquare/SubSquare';
 
 const MainSquare = (props) => {
