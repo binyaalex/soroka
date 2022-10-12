@@ -172,6 +172,10 @@ footer>a {
   text-align: right;
 }
 
+.nav {
+  padding: 0 10px;
+}
+
 @media only screen and (max-width: 500px) {
   .modal-dialog {
     top: 20%;
