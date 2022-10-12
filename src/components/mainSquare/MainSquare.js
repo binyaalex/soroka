@@ -12,18 +12,19 @@ const MainSquare = (props) => {
         </div>
       </div >
 
-      {props.mainSelect === props.text &&
-        <div className="categories">
-          {props.categories.map((el, i) => {
-            return (
-              <div className="categoty" key={i} onClick={''}>
-                <img src={el.img} />
-                <h1>{el.title}</h1>
-              </div>
-            )
-          })}
-        </div>
-      }
+      {/* {props.mainSelect === props.text && */}
+      <div className="categories">
+        {props.categories.map((el, i) => {
+          return (
+            <div className="categoty" key={i} onClick={''}>
+              <img src={el.img} />
+              <h1>{el.title}</h1>
+            </div>
+          )
+        })
+        }
+      </div>
+      {/* } */}
     </>
   )
 }
