@@ -175,6 +175,9 @@ const MainArr = [
 const Main = () => {
     const [mainSelect, setMainSelect] = useState()
     const [subSelect, setSubSelect] = useState()
+    const [show, setShow] = useState(false);
+    const handleShow = () => setShow(true);
+
     const openMap = () => {
         const popup = document.querySelector('.map').parentElement
         console.log(popup);
@@ -185,7 +188,7 @@ const Main = () => {
         <>
             <main className='mainPage' >
                 <div className='nav'>
-                    <img onClick={openMap} src={mapIcon} />
+                    <img onClick={handleShow} src={mapIcon} />
                     <img src={logo} />
                     <AiOutlineMenu style={{ color: 'var(--blue)', width: '10%' }} />
 
@@ -200,7 +203,7 @@ const Main = () => {
                         />
                     )
                 })}
-                <Popup component={<Map />} />
+                <Map show={show} setShow={setShow} />
                 <footer>
                     <a className='clalit' href="https://www.clalit.co.il" >אתר כללית</a>
                     <a className='soroka' href="https://www.clalit.co.il" >אתר סורוקה</a>

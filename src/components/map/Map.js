@@ -6,7 +6,7 @@ import { FaTimesCircle } from 'react-icons/fa';
 
 const Map = (props) => {
     const handleClose = () => props.setShow(false);
-
+    
     return (
         <Modal show={props.show} onHide={handleClose} className="modal">
             <div className="map">
